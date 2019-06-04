@@ -1,0 +1,15 @@
+make all：编译程序、库、文档等（=make）
+make是用来编译的，从makefile中读取指令，安装到制定的位置
+
+make install 安装已经编译好的程序 复制文件树中文件到指定位置
+make unistall 卸载已经安装的程序
+make clean删除有make命令产生的文件
+make distclean 删除由./configure产生的文件
+make check 测试刚刚编译的软件
+make installcheck 检查安装的库和程序
+make disk重新打包成packname-version.tar.gz
+
+
+git clone https://git.teraspek.cn/scm/sonic/sonic-buildimage.git
+执行这一步时，要将mtu 1500加上  因为通过我们的网络是通过代理的  字节数已经变大了 而网站默认的并没有改变  只能把字节数扩充。
+
